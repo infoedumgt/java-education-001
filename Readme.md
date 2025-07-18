@@ -51,8 +51,11 @@ OpenJDK 64-Bit Server VM Temurin-17.0.9+9 (build 17.0.9+9, mixed mode, sharing)
 git version 2.47.1.windows.2
 
 
-
 ## source 를 git clone 한뒤 다음과 같이 우측 상단의 run java 실행
 ## 초대 받은 사람 이메일로 수락 후
 https://github.com/edumgt/java-education-001.git
 ![alt text](image-10.png)
+
+## 각 git repo 만들기
+## 해당 repo clone
+## Readme.md 파일 만들어서 MD 파일 답게 간단히 입력
