@@ -10,9 +10,13 @@ public class ExampleWorldScanner {
             System.out.print("이름을 입력하세요: ");
             String name = scanner.nextLine();
 
+
+
             // 정수 입력
             System.out.print("나이를 입력하세요: ");
             short age = scanner.nextShort();
+
+            
 
             // 실수 입력
             System.out.print("키(cm)를 입력하세요: ");
