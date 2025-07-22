@@ -1,30 +1,37 @@
-// import java.util.Scanner;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ExampleWorldScanner {
     public static void main(String[] args) {
-        // Scanner 객체 생성 (System.in을 통해 콘솔 입력 받음)
         Scanner scanner = new Scanner(System.in);
 
-        // 문자열 입력
-        System.out.print("이름을 입력하세요: ");
-        String name = scanner.nextLine();
+        try {
+            // 문자열 입력
+            System.out.print("이름을 입력하세요: ");
+            String name = scanner.nextLine();
 
-        // 정수 입력
-        System.out.print("나이를 입력하세요: ");
-        int age = scanner.nextInt();
+            // 정수 입력
+            System.out.print("나이를 입력하세요: ");
+            short age = scanner.nextShort();
 
-        // 실수 입력
-        System.out.print("키(cm)를 입력하세요: ");
-        double height = scanner.nextDouble();
+            // 실수 입력
+            System.out.print("키(cm)를 입력하세요: ");
+            double height = scanner.nextDouble();
 
-        // 출력
-        System.out.println("\n[입력 결과]");
-        System.out.println("이름: " + name);
-        System.out.println("나이: " + age + "세");
-        System.out.println("키: " + height + "cm");
+            // 출력
+            System.out.println("\n[입력 결과]");
+            System.out.println("이름: " + name);
+            System.out.println("나이: " + age + "세");
+            System.out.println("키: " + height + "cm");
 
-        // Scanner 닫기
-        scanner.close();
+        } catch (InputMismatchException e) {
+            System.out.println("\n❌ 입력 형식이 올바르지 않습니다.");
+            System.out.println("→ 나이는 정수, 키는 실수로 입력해야 합니다.");
+        } catch (Exception e) {
+            System.out.println("\n❌ 알 수 없는 오류가 발생했습니다: " + e.getMessage());
+        } finally {
+            // Scanner 닫기 (자원 해제)
+            scanner.close();
+        }
     }
 }
