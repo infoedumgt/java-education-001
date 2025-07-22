@@ -1,6 +1,7 @@
+// import java.util.Scanner;
 import java.util.Scanner;
 
-public class ScannerExample {
+public class ExampleWorldScanner {
     public static void main(String[] args) {
         // Scanner 객체 생성 (System.in을 통해 콘솔 입력 받음)
         Scanner scanner = new Scanner(System.in);
